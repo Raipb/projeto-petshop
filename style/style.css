@@ -1,0 +1,93 @@
+/* Reset para todas as paginas*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Inclui padding e borda dentro da largura e altura do elemento.*/
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /*Espaçamento entre linhas*/
+    background-color: aliceblue;
+    color: black;
+}
+
+/* Cabeçalho e nvegação */
+header {
+    background-color: #d19d54;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px; /*Espaçamento inferior*/
+}
+
+nav ul {
+    list-style: none; /*Remove os marcadores da lista*/
+    display: flex; /*Exibe os itens da lista em linha*/
+    justify-content: center; /*Centraliza os itens da lista*/
+    flex-wrap: wrap; /*Permite que os itens da lista quebrem para a linha seguinte se não houver espaço suficiente*/
+    gap: 20px; /*Espaçamento entre os itens da lista*/
+}
+
+nav a {
+    text-decoration: none; /*Remove o sublinhado dos links*/
+    color: #333; /*Cor do texto dos links*/
+    background-color: #fff; /*Cor de fundo dos links*/
+    padding: 10px 15px; /*Espaçamento interno dos links*/
+    border-radius: 8px; /*Borda arredondada dos links*/
+    transition: background-color 0.3s; /*Transição suave para a cor de fundo*/
+}
+
+nav a:hover {
+    background-color: #ffd89b ; /*Cor de fundo dos links ao passar o mouse*/
+}
+
+/* Seções */
+section {
+    max-width: 800px; /*Largura máxima da seção*/
+    margin: 30px auto; /*Centraliza a seção na página*/
+    padding: 20px; /*Espaçamento interno da seção*/
+    background-color: #fff; /*Cor de fundo da seção*/
+    border-radius: 12px; /*Borda arredondada da seção*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /*Sombra da seção*/
+}
+
+/* Formulário */
+form {
+    max-width: 600px; /*Largura máxima do formulário*/
+    margin: 30px auto; /*Centraliza o formulário na página*/
+    background-color: #fff; /*Cor de fundo do formulário*/
+    padding: 20px; /*Espaçamento interno do formulário*/
+    border-radius: 12px; /*Borda arredondada do formulário*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /*Sombra do formulário*/
+}
+
+/* Estilo dos campos de entrada */
+label {
+    display: block; /*Exibe o rótulo como um bloco*/
+    margin-top: 15px; /*Espaçamento superior*/
+}
+
+input, select, textarea {
+    width: 100%; /*Largura total do campo*/
+    padding: 10px; /*Espaçamento interno do campo*/
+    margin-top: 5px; /*Espaçamento superior*/
+    border-radius: 8px; /*Borda arredondada do campo*/
+    border: 1px solid #ccc; /*Borda do campo*/
+}
+
+button {
+  background-color: #ffb347; /*Cor de fundo do botão*/
+  border: none; /*Remove a borda do botão*/
+  padding: 10px 15px; /*Espaçamento interno do botão*/
+  border-radius: 8px; /*Borda arredondada do botão*/
+  margin-top: 15px; /*Espaçamento superior*/
+  cursor: pointer; /*Cursor de ponteiro ao passar o mouse*/
+  color: #333; /*Cor do texto do botão*/
+}
+
+button:hover {
+    background-color: #ffd89b; /*Cor de fundo do botão ao passar o mouse*/
+}

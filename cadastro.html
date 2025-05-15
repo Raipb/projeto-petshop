@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
-    
-    
 
     <!--Menu de navegação-->
     <header>
@@ -18,11 +19,24 @@
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
                 <li><a href="dicas.html">Dicas</a></li>
-                <li><a href="contato.html">Contatos</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
+    <!--
+    nome:
+    nascimento:
+    idade:
+    sexo:
+    espécie:
+    raça:
+    peso:
+    cor:
+    pelagem:
+    castrado:
+    obsevação:
+    -->
 
     <!--Cadastro de cliente e pet-->
     <form action="#" method="post">
@@ -43,10 +57,10 @@
 
             <!--Tipo do Pet-->
             <label>Tipo do Pet</label><br>
-            
+
             <input type="radio" id="cachorro" name="tipo" value="Cachorro">
             <label for="cachorro">Cachorro</label><br>
-            
+
             <input type="radio" id="gato" name="tipo" value="Gato">
             <label for="gato">Gato</label><br>
 
@@ -71,7 +85,8 @@
 
             <!--Observações-->
             <label for="obs">Observações:</label><br>
-            <textarea name="obs" id="obs" rows="4" cols="40" placeholder="Alguma preferência ou informação extra?"></textarea><br><br>
+            <textarea name="obs" id="obs" rows="4" cols="40"
+                placeholder="Alguma preferência ou informação extra?"></textarea><br><br>
 
             <!--Botões-->
             <button type="submit">Enviar</button>
@@ -81,4 +96,5 @@
     </form>
 
 </body>
+
 </html>
