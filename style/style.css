@@ -8,15 +8,15 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6; /*Espaçamento entre linhas*/
-    background-color: aliceblue;
+    background-color: rgb(201, 164, 164);
     color: black;
 }
 
 /* Cabeçalho e nvegação */
 header {
-    background-color: #d19d54;
+    background-color: rgb(33, 156, 156);
     padding: 20px;
-    text-align: center;
+    
 }
 
 header h1 {
@@ -34,14 +34,14 @@ nav ul {
 nav a {
     text-decoration: none; /*Remove o sublinhado dos links*/
     color: #333; /*Cor do texto dos links*/
-    background-color: #fff; /*Cor de fundo dos links*/
+    background-color: #c3c1ca; /*Cor de fundo dos links*/
     padding: 10px 15px; /*Espaçamento interno dos links*/
     border-radius: 8px; /*Borda arredondada dos links*/
     transition: background-color 0.3s; /*Transição suave para a cor de fundo*/
 }
 
 nav a:hover {
-    background-color: #ffd89b ; /*Cor de fundo dos links ao passar o mouse*/
+    background-color: #32872c ; /*Cor de fundo dos links ao passar o mouse*/
 }
 
 /* Seções */
@@ -71,21 +71,21 @@ label {
 }
 
 input, select, textarea {
-    width: 100%; /*Largura total do campo*/
-    padding: 10px; /*Espaçamento interno do campo*/
-    margin-top: 5px; /*Espaçamento superior*/
-    border-radius: 8px; /*Borda arredondada do campo*/
+    width: 100%;              /*Largura total do campo*/
+    padding: 10px;            /*Espaçamento interno do campo*/
+    margin-top: 5px;          /*Espaçamento superior*/
+    border-radius: 8px;       /*Borda arredondada do campo*/
     border: 1px solid #ccc; /*Borda do campo*/
 }
 
 button {
   background-color: #ffb347; /*Cor de fundo do botão*/
-  border: none; /*Remove a borda do botão*/
-  padding: 10px 15px; /*Espaçamento interno do botão*/
-  border-radius: 8px; /*Borda arredondada do botão*/
-  margin-top: 15px; /*Espaçamento superior*/
-  cursor: pointer; /*Cursor de ponteiro ao passar o mouse*/
-  color: #333; /*Cor do texto do botão*/
+  border: none;                /*Remove a borda do botão*/
+  padding: 10px 15px;          /*Espaçamento interno do botão*/
+  border-radius: 8px;          /*Borda arredondada do botão*/
+  margin-top: 15px;            /*Espaçamento superior*/
+  cursor: pointer;             /*Cursor de ponteiro ao passar o mouse*/
+  color: #333;               /*Cor do texto do botão*/
 }
 
 button:hover {
