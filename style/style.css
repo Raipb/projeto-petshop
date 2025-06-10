@@ -1,3 +1,4 @@
+
 /* Reset para todas as paginas*/
 * {
     margin: 0;
@@ -90,4 +91,62 @@ button {
 
 button:hover {
     background-color: #ffd89b; /*Cor de fundo do botão ao passar o mouse*/
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto */
+    padding: 20px 10px 10px; /* Espaçamento interno */
+    font-size: 14px;
+}
+
+/* Container com as colunas */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Quebra as colunas em telas pequenas */
+    justify-content: space-around; /* Espaçamento entre colunas */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+/* Cada coluna */
+.footer-col {
+    flex: 1 1 180px; /* Cresce, encolhe, tamanho mínimo */
+    margin: 5px;
+}
+
+/* Título das colunas */
+.footer-col h4 {
+    margin-bottom: 6px;
+    color: #ffb347; /* Cor laranja suave */
+    font-size: 16px;
+}
+
+/* Texto */
+.footer-col p {
+    line-height: 1.5;
+}
+
+/* Parte inferior do rodapé */
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Botão "voltar ao topo" */
+.voltar-topo {
+    background-color: #ffb347;
+    color: #333;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+}
+
+.voltar-topo:hover {
+    background-color: #ffd89b;
 }
