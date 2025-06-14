@@ -12,7 +12,7 @@
 
 <body>
 
-    <!-- Navbar com Bootstrap e logo -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
 
@@ -22,7 +22,7 @@
                 <span>PetShop</span>
             </a>
 
-            <!-- Botão responsivo do menu (hamburguer) -->
+            <!-- Botão do menu responsivo -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse" id="menuNavbar">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="servicos.html">Serviços</a></li>
                     <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
                     <li class="nav-item"><a class="nav-link" href="dicas.html">Dicas</a></li>
                     <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
@@ -40,64 +40,116 @@
         </div>
     </nav>
 
-    <!-- Seção principal com espaçamento -->
-    <section class="container mt-5">
-
-        <!-- Título centralizado -->
+    <!-- Carrossel -->
+    <div class="container mt-5">
         <h2 class="text-center mb-4">Nossos Serviços</h2>
 
-        <!-- Grid responsivo com 3 colunas em telas médias (md) e maiores -->
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div id="carouselServicos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
 
-            <!-- Card 1: Banho -->
-            <div class="col">
-                <div class="card h-100">
-                    <!-- Imagem do serviço -->
-                    <img src="img/banho-cachorro2.jpeg" class="card-img-top" alt="Banho em cachorro">
-                    <div class="card-body">
-                        <!-- Título e descrição -->
-                        <h5 class="card-title">Banho</h5>
-                        <p class="card-text">
-                            Banhos relaxantes com produtos especiais para deixar seu pet limpinho e cheiroso.
-                        </p>
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="img/banho-cachorro2.jpeg" class="d-block w-100" alt="Banho em cachorro">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                        <h5>Banho</h5>
+                        <p>Banhos relaxantes com produtos especiais para deixar seu pet limpinho e cheiroso.</p>
+                    </div>
+                    <div class="descricao-mobile d-md-none text-center mt-2">
+                        <h5>Banho</h5>
+                        <p>Banhos relaxantes com produtos especiais para deixar seu pet limpinho e cheiroso.</p>
                     </div>
                 </div>
-            </div>
 
-            <!-- Card 2: Tosa -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/tosa-cachorro2.jpeg" class="card-img-top" alt="Tosa de cachorro">
-                    <div class="card-body">
-                        <h5 class="card-title">Tosa</h5>
-                        <p class="card-text">
-                            Tosa higiênica, completa ou estilizada feita por profissionais experientes.
-                        </p>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="img/tosa-cachorro2.jpeg" class="d-block w-100" alt="Tosa de cachorro">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                        <h5>Tosa</h5>
+                        <p>Tosa higiênica, completa ou estilizada feita por profissionais experientes.</p>
+                    </div>
+                    <div class="descricao-mobile d-md-none text-center mt-2">
+                        <h5>Tosa</h5>
+                        <p>Tosa higiênica, completa ou estilizada feita por profissionais experientes.</p>
                     </div>
                 </div>
-            </div>
 
-            <!-- Card 3: Vacinação -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="img/vacinacao-gato.jpeg" class="card-img-top" alt="Vacinação de pet">
-                    <div class="card-body">
-                        <h5 class="card-title">Vacinação</h5>
-                        <p class="card-text">
-                            Aplicação de vacinas essenciais com segurança e cuidado para seu pet.
-                        </p>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="img/vacinacao-gato.jpeg" class="d-block w-100" alt="Vacinação de pets">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                        <h5>Vacinação</h5>
+                        <p>Aplicação de vacinas essenciais com segurança e cuidado para seu pet.</p>
+                    </div>
+                    <div class="descricao-mobile d-md-none text-center mt-2">
+                        <h5>Vacinação</h5>
+                        <p>Aplicação de vacinas essenciais com segurança e cuidado para seu pet.</p>
                     </div>
                 </div>
+
             </div>
 
+            <!-- Botões de navegação -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselServicos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
         </div>
-    </section>
+    </div>
 
-    <!--Links internos-->
-    <section>
+    <!-- Link para agendamento -->
+    <section class="text-center mt-5 mb-4">
         <p>Venha já! <a href="cadastro.html" title="Link para cadastro">Agendar o seu horário</a> com nossos
             profissionais agora mesmo!</p>
     </section>
+
+    <!--animacao-->
+    <div class="animacao-cachorro">
+        <img src="gif/gato-andando.gif" alt="Gato andando">
+    </div>
+
+    <!--foter-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Horário de funcionamento</h4>
+                <p>De segunda à sexta-feira<br>
+                    das 08h às 18h
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Entre em contato</h4>
+                <p>Telefone: 4002-8922<br>
+                    WhatsApp: (99) 99999-9999<br>
+                    petvibes.com.br
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Endereço</h4>
+                <p>Avenida , 000 – Rua<br>
+                    ***** - MG
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Nossas Redes Sociais</h4>
+                <p>
+
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <a href="#topo" class="voltar-topo">Voltar ao topo</a>
+        </div>
+
+    </footer>
+
 
     <!--bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
