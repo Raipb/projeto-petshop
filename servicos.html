@@ -4,30 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços</title>
-    <link rel="stylesheet" href="style/style.css">
+    <title>Pet Vibes</title>
+
+    <!-- CSS Global e específico -->
+    <link rel="stylesheet" href="style/style-global.css">
+    <link rel="stylesheet" href="style/style-servicos.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="topo">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-
-            <!-- Logo -->
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="logo/logoPetshop.png" alt="Logo do PetShop" width="60" height="60" class="me-2">
-                <span>PetShop</span>
+                <img src="logo/logoPetshop2.png" alt="Logo do PetShop" width="80" height="80" class="me-2">
             </a>
 
-            <!-- Botão do menu responsivo -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Links do menu -->
             <div class="collapse navbar-collapse" id="menuNavbar">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -49,7 +51,7 @@
 
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
-                    <img src="img/banho-cachorro2.jpeg" class="d-block w-100" alt="Banho em cachorro">
+                    <img src="img/banho-cachorro.png" class="d-block w-100" alt="Banho em cachorro">
                     <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                         <h5>Banho</h5>
                         <p>Banhos relaxantes com produtos especiais para deixar seu pet limpinho e cheiroso.</p>
@@ -62,7 +64,7 @@
 
                 <!-- Slide 2 -->
                 <div class="carousel-item">
-                    <img src="img/tosa-cachorro2.jpeg" class="d-block w-100" alt="Tosa de cachorro">
+                    <img src="img/tosa-cachorro.png" class="d-block w-100" alt="Tosa de cachorro">
                     <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                         <h5>Tosa</h5>
                         <p>Tosa higiênica, completa ou estilizada feita por profissionais experientes.</p>
@@ -75,7 +77,18 @@
 
                 <!-- Slide 3 -->
                 <div class="carousel-item">
-                    <img src="img/vacinacao-gato.jpeg" class="d-block w-100" alt="Vacinação de pets">
+                    <img src="img/tosa-cachorro2.png" class="d-block w-100" alt="Tosa de cachorro">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                        <h5>Tosa</h5>
+                    </div>
+                    <div class="descricao-mobile d-md-none text-center mt-2">
+                        <h5>Tosa</h5>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                    <img src="img/vacinacao-gato.png" class="d-block w-100" alt="Vacinação de gato">
                     <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                         <h5>Vacinação</h5>
                         <p>Aplicação de vacinas essenciais com segurança e cuidado para seu pet.</p>
@@ -86,17 +99,29 @@
                     </div>
                 </div>
 
-            </div>
+                <!-- Slide 5 -->
+                <div class="carousel-item">
+                    <img src="img/vacinacao-cachorro.png" class="d-block w-100" alt="Vacinação de cachorro">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                        <h5>Vacinação</h5>
+                    </div>
+                    <div class="descricao-mobile d-md-none text-center mt-2">
+                        <h5>Vacinação</h5>
+                    </div>
+                </div>
 
-            <!-- Botões de navegação -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicos" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselServicos" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
-            </button>
+                <!-- Botões de navegação -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicos"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselServicos"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
         </div>
     </div>
 
@@ -107,7 +132,7 @@
     </section>
 
     <!--animacao-->
-    <div class="animacao-cachorro">
+    <div class="animacao-gato">
         <img src="gif/gato-andando.gif" alt="Gato andando">
     </div>
 
@@ -149,7 +174,6 @@
         </div>
 
     </footer>
-
 
     <!--bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
