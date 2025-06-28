@@ -53,7 +53,7 @@ form button:hover {
     background-color: #45a049;
 }
 
-/* Animação do cachorro */
+/* Animação do cachorro verde */
 .animacao-cachorro {
     position: relative;
     width: 100%;
@@ -64,7 +64,7 @@ form button:hover {
 
 .animacao-cachorro img {
     position: absolute;
-    bottom: -10px;
+    bottom: -20px;
     left: -150px;
     width: 120px;
     height: auto;

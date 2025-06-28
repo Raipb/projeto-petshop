@@ -183,6 +183,22 @@ footer {
     z-index: 1;
 }
 
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #ffb347;
+    margin-right: 12px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
 @keyframes brilhoDourado {
   0% {
     background-position: 0% 50%;

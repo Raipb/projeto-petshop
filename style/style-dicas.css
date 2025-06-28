@@ -1,4 +1,4 @@
-/* ===== ESTILO DAS SEÇÕES ===== */
+/* ESTILO DAS SEÇÕES */
 section {
     background-color: #fff;
     padding: 20px;
@@ -8,7 +8,7 @@ section {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== TÍTULOS ===== */
+/* TÍTULOS */
 section h2 {
     color: #b8860b;
     margin-bottom: 10px;
@@ -17,7 +17,7 @@ section h2 {
     font-size: 24px;
 }
 
-/* ===== PARÁGRAFOS ===== */
+/* PARÁGRAFOS */
 section p {
     color: #333;
     line-height: 1.6;
@@ -35,7 +35,7 @@ section video {
     height: auto;
 }
 
-/* ===== Animação do cachorro (pode ficar no style-dicas.css também) ===== */
+/* Animação do cachorro andando */
 .animacao-cachorro {
     position: relative;
     width: 100%;
@@ -46,11 +46,11 @@ section video {
 
 .animacao-cachorro img {
     position: absolute;
-    bottom: -10px;
+    bottom: -22px;
     left: -150px;
     width: 120px;
     height: auto;
-    animation: correr 10s linear infinite;
+    animation: correr 12s linear infinite;
     opacity: 0;
 }
 

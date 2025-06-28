@@ -28,22 +28,24 @@ button {
 
 }
 
-/* Animação do cachorro */
+/* Animação */
+
+/* Animação do cachorros no skate */
 .animacao-cachorro {
     position: relative;
     width: 100%;
-    height: 120px;
+    height: 100px;
     overflow: hidden;
     background: transparent;
 }
 
 .animacao-cachorro img {
     position: absolute;
-    bottom: -10px;
+    bottom: -18px;
     left: -150px;
     width: 120px;
     height: auto;
-    animation: correr 10s linear infinite;
+    animation: correr 8s linear infinite;
     opacity: 0;
 }
 
