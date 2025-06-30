@@ -35,6 +35,14 @@ section video {
     height: auto;
 }
 
+/* ===== ÁUDIO ===== */
+section audio {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600px;
+}
+
 /* Animação do cachorro andando */
 .animacao-cachorro {
     position: relative;
