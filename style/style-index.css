@@ -7,6 +7,12 @@ section {
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+section h2 {
+    color:#b8860b;
+}
+section h3 {
+    color: #b8860b;
+}
 
 /* Banner */
 .banner {
